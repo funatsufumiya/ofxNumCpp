@@ -1,6 +1,6 @@
 # ofxNumCpp
 
-[NumCpp](https://github.com/dpilger26/NumCpp) for openFrameworks (tested on v0.12.0, boolinq version: 2.12.1)
+[NumCpp](https://github.com/dpilger26/NumCpp) for openFrameworks (tested on v0.12.0, NumCpp version: 2.12.1)
 
 ## Usage
 
