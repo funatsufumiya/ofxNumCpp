@@ -17,8 +17,10 @@ void ofApp::setup(){
     ofLogToConsole();
 
     nc::NdArray<int> a = { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+    vector<int> a_as_vector = a.toStlVector();
     auto sum = nc::sum(a);
     ofLogNotice("ofApp") << "a = " << a;
+    ofLogNotice("ofApp") << "a_as_vector = " << ofToString(a_as_vector);
     ofLogNotice("ofApp") << "sum = " << sum;
 
     // matrix multiplication
@@ -32,6 +34,7 @@ void ofApp::setup(){
 
 // Result:
 // [notice ] ofApp: a = [[1, 2, 3, 4, 5, 6, 7, 8, 9, ]]
+// [notice ] ofApp: a_as_vector = {1, 2, 3, 4, 5, 6, 7, 8, 9}
 // [notice ] ofApp: sum = [[45, ]]
 //
 // [notice ] ofApp: a1 =
